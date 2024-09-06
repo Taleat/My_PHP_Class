@@ -1,0 +1,75 @@
+.about{
+    width: 84%;
+    height: 95vh;
+    background: rgba(0, 0, 0, 0.068);
+    /* padding: 10px 0; */
+    /* display: flex; */
+}
+.about-head{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    box-shadow: 0 2px 10px rgb(165, 146, 146);
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    
+}
+.abt-head-pic{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+}
+.abt-head-pic .img-bd{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid  rgb(165, 146, 146);
+}
+.img-bd img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.abt-head-pic-text{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+/* .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+    padding: 30px;
+    /* height: 400px; 
+} */
+.card1{
+    /* border: 1px solid #000; */
+    box-shadow: 0 0 10px 2px rgb(165, 146, 146);
+    height: 200px;
+}
+.card-head{
+    height: auto;
+    padding: 10px 0;
+    background: grey;
+    color: white;
+    text-align: center;
+}
+.card-text{
+    margin: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-text button{
+    width: 150px;
+    height: 30px;
+    background:  grey;
+    color: whitesmoke;
+    border: none;
+}

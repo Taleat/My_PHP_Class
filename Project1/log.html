@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card{
+            width: 900px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .g-inputs{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="logForm">
+        <div class="left">
+            <h1>Success starts here</h1>
+            <h5>✔️ Over 700 categorires</h5>
+            <h5>✔️ Quality work done faster</h5>
+            <h5>✔️ Access to talentand business accros the globe</h5>
+        </div>
+        <div class="right">
+            <h2>Create a new account</h2>
+            <h5>Already have an account? <a href="">Sign In</a></h5>
+            <button class="btn1">Continue with Google</button>
+            <button class="btn1">Continue with email</button>
+            <p>OR</p>
+            <form action="" method="post">
+                <div class="g-inputs">
+                    <input type="text" name="fname">
+                    <input type="text" name="lname">
+                </div>
+                <input type="text" name="username">
+                <input type="email" name="email">
+               <div class="g-inputs">
+                <input type="password" name="password">
+                <input type="password" name="cpassword">
+               </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

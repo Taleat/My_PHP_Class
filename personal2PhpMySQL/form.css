@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.795);
+}
+.all-body{
+    width: 1070px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgba(0, 0, 0, 0.445);
+    color: white;
+    /* border:2px solid white; */
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    padding: 20px 60px;
+}
+.head{
+    width: 100%;
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.regs h3{
+    position: relative;
+    /* width: 0; */
+}
+.regs h3::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .2s ease;
+}
+.regs h3:hover::after{
+    width: 100%;
+}
+.regs{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form .f-texts{
+    padding-bottom: 20px;
+}
+form h1{
+    color:orange;
+    font-weight: bolder;
+}
+.f-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f-info label{
+    font-weight: bold;
+}
+input{
+    width: 250px;
+    height: 35px;
+    padding: 0 3px;
+    color: white;
+    font-weight: bold;
+    background: rgba(128, 128, 128, 0.349);
+    border: none;
+}
+.btn{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 3px;
+    background: orange;
+    border: none;
+    color: white;
+}
+.button2{
+    background: transparent;
+    border: 1px solid orange;
+}
+.button1:hover{
+    background: transparent;
+    border: 1px solid orange;
+}
+.button2:hover{
+    background: orange;
+}

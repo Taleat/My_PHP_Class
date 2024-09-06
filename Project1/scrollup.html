@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+    background-color: #333; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    /* Add other styles as needed */
+}
+
+/* Additional styles for when the navbar changes */
+#navbar.scrolled {
+    background-color: #555; /* New background color on scroll up */
+    /* Add other changed styles */
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <!-- Your navbar content here -->
+    </nav>
+    <div id="content">
+        <!-- Rest of your page content here -->
+    </div>
+    
+
+
+    <script>
+        // Select the navbar and content elements
+var navbar = document.getElementById('navbar');
+var content = document.getElementById('content');
+
+// Listen for scroll events
+content.onscroll = function() {
+    // Check if the user has scrolled past a certain point
+    if (content.scrollTop > 20) { // Adjust the scroll threshold as needed
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+};
+
+    </script>
+</body>
+</html>
